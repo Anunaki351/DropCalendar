@@ -3,30 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تقویم دراپلا</title>
+    <title>تــــــقـــويـــم دراپـــــلا</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="calendar-container">
-        <h1 id="monthYearText">ماه - سال</h1>
-        <div class="nav-buttons">
-            <button id="prevMonthBtn">ماه قبل</button>
-            <button id="nextMonthBtn">ماه بعد</button>
-        </div>
-        <table id="calendarTable">
-            <tr>
-                <th>روز دراپلا</th>
-                <th>تاریخ میلادی</th>
-            </tr>
-        </table>
+
+    <h1>تــــــقـــويـــم دراپـــــلا</h1>
+
+    <div class="controls">
+        <button id="prevYearBtn">سال قبل</button>
+        <select id="yearSelect"></select>
+        <button id="nextYearBtn">سال بعد</button>
     </div>
+
+    <div class="controls">
+        <button id="prevMonthBtn">ماه قبل</button>
+        <select id="monthSelect"></select>
+        <button id="nextMonthBtn">ماه بعد</button>
+    </div>
+
+    <h2 id="monthYearText"></h2>
+
+    <table id="calendarTable">
+        <thead>
+            <tr>
+                <th>دوشنبه</th>
+                <th>سه‌شنبه</th>
+                <th>چهارشنبه</th>
+                <th>پنج‌شنبه</th>
+                <th>جمعه</th>
+                <th>شنبه</th>
+                <th>یک‌شنبه</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
     <script src="script.js"></script>
-<script>
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("service-worker.js")
-    .then(() => console.log("Service Worker Registered"));
-}
-</script>
+
 </body>
 </html>
- 
